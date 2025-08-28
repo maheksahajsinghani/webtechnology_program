@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <h2> the input element</h2>
+ <form action="action_page">
+    <legend>Personalia:</legend>
+    <label for="fname">first name:</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <hr>
+   <label for="flowers">choose a flower:</label>
+    <select id="flowers" name="flower" size="3"multiple>
+    <option value="sunflower">sunflower</option>
+    <option value="rose">rose</option>
+    <option value="lily">lily</option>
+    <option value="jasmine">jasmine</option>
+    <input type="submit" value="Submit">
+  </select>
+  <hr>
+  <p>choose your language:</p> 
+  <input type="radio" id="html" name="language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="language" value="css">
+  <label for="css">css</label><br>
+  <input type="radio" id="phython" name="language" value="phython">
+  <label for="phython">phython</label><br>
+  <hr>
+  <h2>the button element</h2> 
+  <button type="button" onclick="alert('Hello mahek')">Click Me!</button>
+  <h2>address</h2>
+  <textarea name="address" rows="10" cols="30">enter the address here</textarea>
+  <hr>
+  <h2>The datalist Element</h2>
+  <input list="dress type" name="dress type">
+  <datalist id="dress type">
+    <option value="maxi"></option>
+    <option value="crop"></option>
+    <option value="sleevless"></option>
+</datalist>
+<hr>
+<h2>The output Element</h2>
+<oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="number" id="a" value="1">+
+    <input type="number" id="b" value="2">=
+    <output name ="x" for="a b"></output> 
+    <br>  
+</form>
+</body>
+</html>
